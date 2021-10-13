@@ -7,7 +7,7 @@ import {
     MenuList,
     MenuItem,
     MenuDivider,
-    useMediaQuery, Center, Text, Flex, Spacer, Box , Button
+    useMediaQuery, Center, VStack, Text, Flex, Spacer, Box , Button
 } from "@chakra-ui/react"
 const s = "15px";
 
@@ -39,6 +39,7 @@ function Header() {
                             
                         />
                         <MenuList>
+                            <VStack>
                             <MenuItem >
                                 <Link href="/">RGV 1.0.0A</Link>
                             </MenuItem>
@@ -61,6 +62,7 @@ function Header() {
                             <MenuItem >
                                 <Link href="/privatetesting"> Typhoon Finance Tracer</Link>
                             </MenuItem>
+                            </VStack>
                         </MenuList>
                     </Menu>
                     :
