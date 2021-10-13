@@ -11,7 +11,7 @@ function Sniper() {
             <Header />
             <Divider />
             <Container p={5} maxh="900px" maxW="container.lg" centerContent='true'>
-                <Box m="auto" p={4} borderColor="lightblue" rounded="20px" borderWidth="thin" h="750px" >
+                <Box m="auto" p={5} borderColor="lightblue" rounded="20px" borderWidth="thin" h="100%" >
                     <Box p={5}>
                         <Text align="center" fontSize="md">
                             This is a beta Application. We are not liable for any snipes into malicious SC's remember, DYOR. <br />

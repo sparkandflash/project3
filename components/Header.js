@@ -6,20 +6,21 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
+    MenuDivider,
     useMediaQuery, Center, Text, Flex, Spacer, Box , Button
 } from "@chakra-ui/react"
 const s = "15px";
 
 function Header() {
-    var [isLargerThan1280] = useMediaQuery("(min-width: 970px)")
-    //970 is max width before it gets ugly
+    var [isLargerThan1280] = useMediaQuery("(min-width: 910px)")
+    //910px is max width before it gets ugly
    
 
         return (
 
             <header>
                
-                    <Box h="100px" w="100%" p={2} >
+                    <Box h="80px" w="100%" p={2}>
                     {isLargerThan1280 ?
                         <Center>
                             <Flex>
@@ -67,7 +68,7 @@ function Header() {
                             </Flex>
                         </Center>
                         :
-                        <Box m="md" p={5}>
+                        <Box m="md" p={3}>
                         <Menu>
                         <MenuButton
                        scale="md"
@@ -81,6 +82,7 @@ function Header() {
                             <MenuItem >
                                 <Link href="/">RGV 1.0.0A</Link>
                             </MenuItem>
+                            <MenuDivider />
                             <MenuItem >
                                 <Link href="/privatetesting">Rug Monitor </Link>
                             </MenuItem>

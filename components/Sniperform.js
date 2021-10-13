@@ -14,7 +14,7 @@ function SnipeForm() {
     }
 
     return (
-        <Box w="100%" m="auto" p={5} rounded="20px" borderWidth="thin" h="450px" >
+        <Box w="100%" m="auto" p={5} rounded="20px" borderWidth="thin" h="100%" >
 
             <form onSubmit={Sniper}>
 

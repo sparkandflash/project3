@@ -10,9 +10,9 @@ export default function Home() {
       <Divider />
       <Container p={5} h="600px" maxW="container.lg" centerContent='true'>
         
-        <Box m="auto" p={4} borderColor="lightblue" rounded="20px" borderWidth="thin" h="450px">
+        <Box m="auto" p={4} borderColor="lightblue" rounded="20px" borderWidth="thin" h="650px">
 
-          <Box h="90px" p={3}>
+          <Box h="150px" p={3}>
 
             <Text fontSize="2xl" align="center">
               RGV Scam Prevention Toolkit 1.0.0A
@@ -23,7 +23,7 @@ export default function Home() {
           <Box h="144px">
 
             <Text align="center">
-              Current HEAD block: 11733351 <br />
+              Current HEAD block: someblocknumber <br />
               Loaded Account: {acc} <br />
               Current Balance: 0.0 BNB <br />
               Current V1 Balance: 0.0 RGVzdGFudC4K V1 <br />
