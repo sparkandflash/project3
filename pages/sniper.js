@@ -14,7 +14,7 @@ function Sniper() {
                 <Box m="auto" p={5} borderColor="lightblue" rounded="20px" borderWidth="thin" h="100%" >
                     <Box p={5}>
                         <Text align="center" fontSize="md">
-                            This is a beta Application. We are not liable for any snipes into malicious SC's remember, DYOR. <br />
+                            This is a beta Application. We are not liable for any snipes into malicious SCs remember, DYOR. <br />
                             Currently working on adding tradeEnable and block delay. <br />
                         </Text>
                         <Center>
