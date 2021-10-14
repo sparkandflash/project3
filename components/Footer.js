@@ -4,8 +4,8 @@ export default class Footer extends Component {
     render() {
 
         return (
-            <footer>
-         <Container p={5} centerContent='true'>
+            <footer >
+         <Container   p={5} centerContent='true'>
   <Text>© 2021 Copyright: RGV.</Text>
 </Container>
             </footer>

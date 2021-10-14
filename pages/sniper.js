@@ -9,10 +9,13 @@ function Sniper() {
     return (
         <div>
             <Header />
-            <Divider />
+            
             <Container p={5} maxh="900px" maxW="container.lg" centerContent='true'>
-                <Box m="auto" p={5} borderColor="lightblue" rounded="20px" borderWidth="thin" h="100%" >
+                <Box m="auto" p={5}  bg="blue.800" shadow="lg" rounded="20px"  h="100%" >
                     <Box p={5}>
+                    <Text align="center" fontWeight="bold" fontSize="x-large">
+                           Sniper 
+                        </Text>
                         <Text align="center" fontSize="md">
                             This is a beta Application. We are not liable for any snipes into malicious SCs remember, DYOR. <br />
                             Currently working on adding tradeEnable and block delay. <br />
@@ -35,7 +38,7 @@ function Sniper() {
                     </Box>
                 </Box>
             </Container>
-            <Divider />
+          
             <Footer />
         </div>
     )

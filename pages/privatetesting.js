@@ -6,11 +6,11 @@ function Private_testing() {
     return (
         <div>
             <Header />
-            <Divider />
+         
             <Container p={5} h="600px" maxW="container.lg" centerContent='true'>
-                <Box m="auto" p={4} borderColor="lightblue" rounded="20px" borderWidth="thin" h="250px" >
+                <Box m="auto" p={4} shadow="lg" bg="blue.800" rounded="20px"  h="250px" >
 <Box h="50px" p={5}>
-                    <Text fontSize="x-large">
+                    <Text fontWeight="bold" fontSize="x-large">
                         Page Coming Soon.
 
 
@@ -22,7 +22,7 @@ function Private_testing() {
                     </Box>
                 
             </Container>
-            <Divider />
+           
             <Footer />
         </div>
     )

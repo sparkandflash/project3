@@ -1,20 +1,22 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Container, Divider, Text, Box } from "@chakra-ui/react"
-const acc = "0x--some wallet address--"
+const acc = "0x--some wallet address--" ;
+const value ="somevalue";
 export default function Home() {
+  
   return (
-    <div>
+    <div color="blue.900">
 
       <Header />
-      <Divider />
-      <Container p={5} h="600px" maxW="container.lg" centerContent='true'>
+    
+      <Container p={5}  h="600px" maxW="container.lg" centerContent='true'>
         
-        <Box m="auto" p={4} borderColor="lightblue" rounded="20px" borderWidth="thin" h="650px">
+        <Box m="auto" p={4} opacity="90%" blur="3px" borderColor="blue.700" bg="blue.800" rounded="20px" borderWidth="thin" h="650px">
 
-          <Box h="150px" p={3}>
+          <Box h="100px"  p={3}>
 
-            <Text fontSize="2xl" align="center">
+            <Text fontSize="2xl" fontWeight="bold" align="center">
               RGV Scam Prevention Toolkit 1.0.0A
             </Text>
 
@@ -25,10 +27,10 @@ export default function Home() {
             <Text align="center">
               Current HEAD block: someblocknumber <br />
               Loaded Account: {acc} <br />
-              Current Balance: 0.0 BNB <br />
-              Current V1 Balance: 0.0 RGVzdGFudC4K V1 <br />
-              Current V2 Balance: 0.0 RGVzdGFudC4K V2 <br />
-              Current V3 Balance: 0.0 RGVzdGFudC4K V3 <br />
+              Current Balance: {value} <br />
+              Current V1 Balance: {value} <br />
+              Current V2 Balance: {value} <br />
+              Current V3 Balance: {value} <br />
             </Text>
 
           </Box>
@@ -36,7 +38,7 @@ export default function Home() {
         </Box>
 
       </Container>
-      <Divider />
+      
       <Footer />
 
     </div>

@@ -13,17 +13,17 @@ function WalForm() {
     }
 
     return (
-        <Box w="100%" m="auto" p={5} rounded="20px" borderWidth="thin" h="250px" >
+        <Box w="100%" m="auto" p={5}  bg="blue.600" rounded="20px" shadow="lg"  h="250px" >
 
             <form onSubmit={getwallet}>
 
                 <FormControl id="wallet">
                     <FormLabel><Text fontSize="md">Wallet address:</Text></FormLabel>
-                    <Input size="lg" variant="outline" disabled={disableinput} placeholder="0x...." id="address" type="text" />
+                    <Input size="lg" bg="gray.300" variant="filled" disabled={disableinput}  id="address" type="text" />
                 </FormControl>
                 <Center>
                     <Box p={5}>
-                        <Button h="10" p={2} size="lg" isLoading={loading} type="submit" colorScheme="teal" variant="solid"  >Submit</Button>
+                        <Button h="10" shadow="lg" p={2} size="lg" colorScheme="blue" isLoading={loading} type="submit"  variant="solid"  >Submit</Button>
                     </Box>
                 </Center>
             </form>

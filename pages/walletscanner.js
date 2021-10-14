@@ -7,11 +7,11 @@ function Walletscanner() {
     return (
         <div>
             <Header />
-            <Divider />
+         
             <Container p={5} h="600px" maxW="container.lg" centerContent='true'>
-                <Box m="auto" p={4} borderColor="lightblue" rounded="20px" borderWidth="thin" h="450px" >
+                <Box m="auto" p={4}  shadow="lg" bg="blue.800" rounded="20px"  h="450px" >
                     <Box h="50px" p={5}>
-                        <Text align="center" fontSize="x-large">
+                        <Text align="center" fontWeight="bold" fontSize="x-large">
                             RGVzdGFudC4K Wallet Scanner <br />
                             1.0.0A
                         </Text>
@@ -23,7 +23,7 @@ function Walletscanner() {
                     </Box>
                 </Box>
             </Container>
-            <Divider />
+          
             <Footer />
         </div>
     )

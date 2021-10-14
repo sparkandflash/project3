@@ -1,10 +1,11 @@
-import { React, Window, useState, useEffect } from 'react';
+import { React,  useState, useEffect } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
 import {
     Menu,
     MenuButton,
     MenuList,
+    useTheme,
     MenuItem,
     MenuDivider,
     useMediaQuery, Center, VStack, Text, Flex, Spacer, Box, IconButton
@@ -15,14 +16,14 @@ function Header() {
     const [isMinWidth, setIsMinWidth] = useState(false);
     const [mediaQuery] = useMediaQuery("(min-width: 910px)");
     console.log(mediaQuery);
-
+    const theme = useTheme()
     useEffect(() => {
         setIsMinWidth(mediaQuery);
     }, []);
     return (
 
         <header>
-            <Box h="90px" w="100%" p={2}>
+            <Box m="auto" h="80px" w="100%" p={1}>
 
                 {isMinWidth ?
                     <Center>
