@@ -7,15 +7,15 @@ function Private_testing() {
         <div>
             <Header />
          
-            <Container p={5} h="600px" maxW="container.lg" centerContent='true'>
-                <Box m="auto" p={4} shadow="lg" bg="blue.800" rounded="20px"  h="250px" >
+            <Container p={5} h="400px" maxW="container.lg" centerContent='true'>
+                <Box m="auto" p={4} shadow="lg" bg="blue.800" rounded="10px"  h="250px" >
 <Box h="50px" p={5}>
                     <Text fontWeight="bold" fontSize="x-large">
                         Page Coming Soon.
 
 
                     </Text>
-                    <Text>Currently in Private Testing.</Text>
+                    <Text color="gray.500">Currently in Private Testing.</Text>
 </Box>
 
                     

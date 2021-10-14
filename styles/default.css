@@ -1,0 +1,9 @@
+body {
+    background-image: url("../public/Cloudy.svg") !important;
+    
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: bottom !important;
+    background-size: cover;
+}

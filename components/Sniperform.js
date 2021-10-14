@@ -14,30 +14,30 @@ function SnipeForm() {
     }
 
     return (
-        <Box w="100%" bg="blue.900" m="auto" p={5} rounded="20px" shadow="lg" h="100%" >
+        <Box w="100%" bg="blue.900" m="auto" p={5} rounded="10px" shadow="lg" h="100%" >
 
             <form onSubmit={Sniper}>
 
                 <FormControl id="wallet">
                  <VStack>
                    <Box>
-                    <FormLabel><Text fontSize="md">Coin Address:</Text></FormLabel>
-                    <Input size="lg" bg="gray.300" variant="filled"   id="coinaddress" type="text" />
+                    <FormLabel><Text color="blue.200" fontSize="md">Coin Address:</Text></FormLabel>
+                    <Input size="lg"  variant="filled"   id="coinaddress" type="text" />
                 </Box>
 
                 <Box>
-                    <FormLabel><Text fontSize="md">Wallet To Send To:</Text></FormLabel>
-                    <Input size="lg" bg="gray.300" variant="filled"  placeholder="0x...." id="sendto" type="text" />
+                    <FormLabel><Text color="blue.200" fontSize="md">Wallet To Send To:</Text></FormLabel>
+                    <Input size="lg"  variant="filled"  id="sendto" type="text" />
                 </Box>
 
                 <Box>
-                    <FormLabel><Text fontSize="md">BNB Amount to Snipe:</Text></FormLabel>
-                    <Input size="lg" bg="gray.300" variant="filled"   id="BNBAmount" type="text" />
+                    <FormLabel><Text color="blue.200" fontSize="md">BNB Amount to Snipe:</Text></FormLabel>
+                    <Input size="lg"  variant="filled"   id="BNBAmount" type="text" />
                 </Box>
 
                 <Box>
-                    <FormLabel><Text fontSize="md">Amount of Times to Buy:</Text></FormLabel>
-                    <Input size="lg" bg="gray.300" variant="filled"   id="amountOftimes" type="text" />
+                    <FormLabel><Text  color="blue.200"fontSize="md">Amount of Times to Buy:</Text></FormLabel>
+                    <Input size="lg" variant="filled"   id="amountOftimes" type="text" />
                 </Box>
 
                  </VStack>

@@ -9,20 +9,20 @@ function WalForm() {
     const getwallet = async event => {
         event.preventDefault()
         //on submit action
-        console.log(event.target.address.value)
+        console.log(event.target.address.value);
     }
 
     return (
-        <Box w="100%" m="auto" p={5}  bg="blue.600" rounded="20px" shadow="lg"  h="250px" >
+        <Box w="100%" m="auto" p={5}  bg="blue.600" rounded="10px" shadow="md"  h="200px" >
 
             <form onSubmit={getwallet}>
 
                 <FormControl id="wallet">
                     <FormLabel><Text fontSize="md">Wallet address:</Text></FormLabel>
-                    <Input size="lg" bg="gray.300" variant="filled" disabled={disableinput}  id="address" type="text" />
+                    <Input size="lg" bg="blue.900" variant="filled" disabled={disableinput}  id="address" type="text" />
                 </FormControl>
                 <Center>
-                    <Box p={5}>
+                    <Box p={4}>
                         <Button h="10" shadow="lg" p={2} size="lg" colorScheme="blue" isLoading={loading} type="submit"  variant="solid"  >Submit</Button>
                     </Box>
                 </Center>

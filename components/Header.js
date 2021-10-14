@@ -8,13 +8,13 @@ import {
     useTheme,
     MenuItem,
     MenuDivider,
-    useMediaQuery, Center, VStack, Text, Flex, Spacer, Box, IconButton
+    useMediaQuery, Center,  VStack, Text, Flex, Spacer, Box, IconButton
 } from "@chakra-ui/react"
-const s = "15px";
+const styles = {"color":"blue.100","textShadow":"lg", "fontWeight":"bold", "fontSize":"sm"};
 
 function Header() {
     const [isMinWidth, setIsMinWidth] = useState(false);
-    const [mediaQuery] = useMediaQuery("(min-width: 910px)");
+    const [mediaQuery] = useMediaQuery("(min-width: 940px)");
     console.log(mediaQuery);
     const theme = useTheme()
     useEffect(() => {
@@ -23,49 +23,50 @@ function Header() {
     return (
 
         <header>
-            <Box m="auto" h="80px" w="100%" p={1}>
+           
+            <Box m="auto" h="60px" w="100%" p={1}>
 
                 {isMinWidth ?
                     <Center>
                         <Flex>
                             <Box p="2">
-                                <Text fontSize={s}>
+                                <Text  {...styles}>
                                     <Link href="/">RGV 1.0.0A</Link>
                                 </Text>
                             </Box>
-                            <Spacer />
+                            <Spacer p={1}/>
                             <Box p="2">
-                                <Text fontSize={s}>
-                                    <Link href="/privatetesting">Rug Monitor </Link>
+                                <Text {...styles}>
+                                    <Link href="/privatetesting">Rug Monitor</Link>
                                 </Text>
                             </Box>
-                            <Spacer />
+                            <Spacer p={1}/>
                             <Box p="2">
-                                <Text fontSize={s}>
+                                <Text {...styles}>
                                     <Link href="/walletscanner">Wallet Scanner </Link>
                                 </Text>
                             </Box>
-                            <Spacer />
+                            <Spacer p={1} />
                             <Box p="2">
-                                <Text fontSize={s}>
+                                <Text {...styles}>
                                     <Link href="/sniper">Sniper</Link>
                                 </Text>
                             </Box>
-                            <Spacer />
+                            <Spacer p={1}/>
                             <Box p="2">
-                                <Text fontSize={s}>
+                                <Text {...styles}>
                                     <Link href="/privatetesting">List of Known Scammers</Link>
                                 </Text>
                             </Box>
-                            <Spacer />
+                            <Spacer p={1}/>
                             <Box p="2">
-                                <Text fontSize={s}>
+                                <Text {...styles}>
                                     <Link href="/privatetesting">Tornado Cash Tracer</Link>
                                 </Text>
                             </Box>
-                            <Spacer />
+                            <Spacer p={1}/>
                             <Box p="2">
-                                <Text fontSize={s}>
+                                <Text {...styles}>
                                     <Link href="/privatetesting"> Typhoon Finance Tracer</Link>
                                 </Text>
                             </Box>
@@ -101,42 +102,42 @@ function Header() {
                                     <MenuDivider />
                                     <MenuItem >
                                         <Box p="1">
-                                            <Text fontSize={s}>
+                                            <Text fontSize={15}>
                                                 <Link href="/privatetesting">Rug Monitor </Link>
                                             </Text>
                                         </Box>
                                     </MenuItem>
                                     <MenuItem >
                                         <Box p="1">
-                                            <Text fontSize={s}>
+                                            <Text fontSize={15}>
                                                 <Link href="/walletscanner">Wallet Scanner </Link>
                                             </Text>
                                         </Box>
                                     </MenuItem>
                                     <MenuItem >
                                         <Box p="1">
-                                            <Text fontSize={s}>
+                                            <Text fontSize={15}>
                                                 <Link href="/sniper">Sniper</Link>
                                             </Text>
                                         </Box>
                                     </MenuItem>
                                     <MenuItem >
                                         <Box p="1">
-                                            <Text fontSize={s}>
+                                            <Text fontSize={15}>
                                                 <Link href="/privatetesting">List of Known Scammers</Link>
                                             </Text>
                                         </Box>
                                     </MenuItem>
                                     <MenuItem >
                                         <Box p="1">
-                                            <Text fontSize={s}>
+                                            <Text fontSize={15}>
                                                 <Link href="/privatetesting">Tornado Cash Tracer</Link>
                                             </Text>
                                         </Box>
                                     </MenuItem>
                                     <MenuItem >
                                         <Box p="1">
-                                            <Text fontSize={s}>
+                                            <Text fontSize={15}>
                                                 <Link href="/privatetesting"> Typhoon Finance Tracer</Link>
                                             </Text>
                                         </Box>
